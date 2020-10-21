@@ -1,0 +1,77 @@
+.quote{
+    background: url(https://source.unsplash.com/collection/8469893/720x480) center/cover;
+    position: relative;
+}
+.quote .overlay{
+
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+
+}
+
+
+.quote-content{
+    margin: 75px 0;
+    text-align: center;
+}
+
+.content{
+    color: white !important;
+    font-weight: 700;
+    font-size: 2rem;;
+    margin: 0;
+
+}
+.author{
+    font-style: italic;
+    color: whitesmoke !important;
+    margin: 0;
+    padding-top: 10px;
+    }
+.button-container{
+    margin: 0 0 30px 0;
+    text-align: center;
+
+}
+.fa-clock-o{
+    padding-right: 7px;
+}
+ .fa-bookmark{
+    padding-right: 5px;
+
+ }
+.bookmark{
+    float: left;
+    color: white;
+    transition: 250ms;
+    
+}
+
+.bookmark:hover{
+    opacity: 0.65;
+    cursor: pointer;
+    transition: 250ms;
+}
+.btn{
+padding: 10px;
+text-decoration: none;
+color: white;
+cursor: pointer;
+transition: 250ms;
+text-align: center;
+
+}
+
+.btn:hover{
+    color: black;
+    background-color: white;
+    transition: 250ms;
+}
+
+
+
+ 
+
+.center{
+    text-align: center;
+}

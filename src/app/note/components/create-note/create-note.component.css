@@ -1,0 +1,59 @@
+.input{
+    outline: none;
+    border-radius: 0;
+    padding: 7px 5px;
+    color: #555555;
+    font-weight: 700;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+     font-size: 1.5rem;
+    border:none;
+     text-overflow: ellipsis;
+     width: 95%;
+    background: transparent;
+    line-height: normal;
+ 
+}
+.errors{
+    padding: 10px;
+    font-size: 14px;
+    width: 95%;
+    padding:0;
+    margin: 0;
+ 
+}
+.errors p{
+/* padding: 10px; */
+}
+.ng-touched .ng-invalid{
+    border:1px solid tomato !important;
+}
+::placeholder {
+     opacity: 0.5; 
+  }
+textarea{
+    color: #777777;
+    resize: none;
+    font-size: 1rem !important;
+}
+ 
+.btn{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 0;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+    transition: 250ms;
+    text-align: center;
+    background: transparent;
+     
+    }
+    
+    .btn:hover{
+        color: white;
+        background-color: black;
+        transition: 250ms;
+    }
+    

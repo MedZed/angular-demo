@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div class="quote" *ngFor="let quote of quotes.reverse()" >
+        <a (click)="onItemClick($event, quote._id)" class="bookmark">
+            <i class="fas fa-bookmark" title="Delete this quote"></i>
+        </a>
+        <p class="content"> {{quote?.content}}
+        </p>
+        <p class="author"> {{quote?.author}} </p>
+    </div>
+
+ 
+    <div  *ngIf="show_delete_dialog" class="dialog">
+        <p> Are you sure you want to delete?
+        </p> 
+        <span (click)="onConfirmButton($event, false)" class="btn no">Cancel</span>
+        <span (click)="onConfirmButton($event, true)" class="btn yes">Yes, delete</span>
+    </div>
+
+
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+
+
+<form   (submit)="onSubmit(title.value, text.value)">
+
+    <input  required minlength="5" maxlength="50" ngModel #title="ngModel" name="title"  class="input" type="text" required placeholder="Note title">
+    
+    <div class="errors" *ngIf="title.touched && !title.valid">
+        <p *ngIf="title.errors.required">Title is required</p>
+        <p *ngIf="title.errors.minlength">Title should be minimum {{title.errors.minlength.requiredLength}} characters</p>
+    </div>
+    
+    
+    <textarea class="input" required minlength="10" maxlength="2000" ngModel #text="ngModel" name="text" id="text" cols="30" rows="10" placeholder="Your Note text goes here..."></textarea>
+   
+    <div class="errors" *ngIf="text.touched && !text.valid">
+        <p *ngIf="text.errors.required">Text is required</p>
+        <p *ngIf="text.errors.minlength">Text should be minimum {{text.errors.minlength.requiredLength}} characters</p>
+    </div>
+
+
+    <button  *ngIf="title.valid && text.valid" class="btn">Submit</button>
+</form>
+</div>
+
+ 

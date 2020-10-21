@@ -1,0 +1,13 @@
+
+.hero-container{
+    width: 100%;
+    background-color: black;
+}
+
+.hero-container h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 60px;
+}

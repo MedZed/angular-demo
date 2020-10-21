@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid .item{
+    padding: 20px;
+    /* background-color: #c7c7c7; */
+    text-align: center;
+    border: 1px solid #a7a7a7;
+    transition: 250ms;
+    position: relative;
+
+
+}
+
+.grid .item:hover{
+
+    transition: 250ms;
+    background-color: #f3ede2;
+cursor: pointer;
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+  }

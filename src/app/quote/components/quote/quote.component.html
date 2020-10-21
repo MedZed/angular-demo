@@ -1,0 +1,34 @@
+ 
+    <div class="quote" [ngStyle]="{background: 'url(' + img + ') center/cover'}">
+
+  
+        <div class="overlay">
+
+                 <a (click)="onSave()"class="bookmark" title="{{save_button_title}}">
+                    <i class="{{save_button_text}} fa-bookmark"></i>  {{save_button_title}}
+                </a>
+
+  
+ 
+            <div class="quote-content" *ngIf="!loading">
+                <p class="content"> {{quote?.content}}
+                </p>
+                <p class="author">- {{quote?.author}} </p>
+     
+            </div>
+             <div class="quote-content" *ngIf="loading">
+                <p class="content center">
+                    Loading... Please wait
+                </p>
+            </div>
+    
+            <a (click)="onGetQuote()" class="btn">
+                <i *ngIf="loading" class="fas fa-spinner fa-spin"></i> Another one 
+            </a>
+        </div>
+
+         
+    </div>
+
+ 
+ 
