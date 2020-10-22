@@ -9,5 +9,8 @@ export class NoteService {
   getNotes(){
     return JSON.parse(localStorage.getItem('notes'));
   }
+  deleteNotes(id){
+    return "going to delete this one here " + id;
+  }
   }
 

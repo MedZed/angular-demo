@@ -1,5 +1,23 @@
+.grid {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+ }
+
+
+
+ @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+  }
+
 .quote{
-     margin: 10px 0;
+    margin:  0;
     padding: 20px;
     border: 1px solid;
 
@@ -57,8 +75,12 @@ display: inline-block;
  
 .author{
 font-style: italic;
-color: #444 !important;
-margin: 20px 0;
+font-style: italic;
+ margin: 0;
+border-left: 2px solid #444;
+padding: 0 5px;
+background-color: rgb(240, 240, 240);
+width: fit-content;
 }
 
 .dialog{

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Quote } from 'src/app/models/quote';
+import { QuoteService } from '../../quote.service';
 
 @Component({
   selector: 'app-saved-quotes',
@@ -8,13 +9,13 @@ import { Quote } from 'src/app/models/quote';
 })
 export class SavedQuotesComponent implements OnInit {
   @Input() quote: Quote;
-  quotes: Quote[] = JSON.parse(localStorage.getItem('quotes'));
+  quotes: Quote[] = [];
 
-  constructor() { }
+  constructor(private quoteservice: QuoteService) { }
  
 
   ngOnInit(): void {
-    this.quotes = JSON.parse(localStorage.getItem('quotes'));
+     this.quoteservice.cast.subscribe(quotes => this.quotes = quotes);
   }
   
 

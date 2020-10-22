@@ -1,4 +1,8 @@
+
+<div class="container">
+    <app-new-note-tile title="Create a new quote"></app-new-note-tile>
+
 <div class="grid">
-    <app-new-note-tile class="item" title="Create a new quote"></app-new-note-tile>
-    <app-note-tile class="item"  *ngFor="let note of notes" [note]="note"></app-note-tile>
+    <app-note-tile class="item"  *ngFor="let note of notes.reverse()" [note]="note"></app-note-tile>
+</div>
 </div>

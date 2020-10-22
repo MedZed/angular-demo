@@ -1,9 +1,11 @@
-span{
+.date{
     font-size: 10px;
     position: absolute;
     bottom: 5px;
     right: 5px;
     color: #a7a7a7 !important;
+    z-index: -1;
+
 }
 p{
     text-align: left;
@@ -26,12 +28,89 @@ p{
     text-overflow: ellipsis;
 }
 
-a {
+.header{
+    text-align: right;
+    border-bottom:1px solid #a7a7a7;
+
+ }
+i{
+    padding: 5px;
+    color: black;
+    font-size: 1.5rem;
+    }
+    i:hover{
+cursor: pointer;
+        }
+    .body{
+        position: relative;
+        padding: 20px;
+    
+    }
+    .view:hover{
+background-color:  rgba(255, 255, 255, 0.38);
+    transition: 250ms;
+    }
+.view{
     text-decoration: none;
     color: black;
     position: absolute;
-    top: 0;
+    top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
+    transition: 250ms;
+
 }
+ 
+
+
+
+.buttons{
+    padding: 0 0 50px 0;
+}
+
+.btn{
+padding: 10px;
+margin: 20px 7px ;
+text-decoration: none;
+color: black;
+cursor: pointer;
+display: inline-block;
+}
+
+.no{
+    color:  black;
+    background-color: white;
+    border: 1px solid;
+    transition: 250ms;
+}
+.no:hover{
+    background-color: white;
+    border: 1px solid #555555;
+    color:#555555;;
+    transition: 250ms;
+}
+.yes{
+    color: white;
+    background-color: black;
+    transition: 250ms;
+}
+.yes:hover{
+    background-color: #222222;
+    transition: 250ms;
+}
+
+.dialog{
+    margin: 0 auto;
+    border: 1px solid;
+    max-width: 350px;
+    padding:30px 50px ;
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+ 

@@ -1,17 +1,11 @@
- i{
-    font-size: 5rem;
-    line-height: 160px;
-    height: 160px;
-    text-align: center;
-       opacity: 0.4;
-}
+ .new{
+   height: 50px !important;
+ }
  
 a {
    text-decoration: none;
-   color: black;
+   color: white;
+   background-color: black;
+   padding:10px; 
    position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
 }

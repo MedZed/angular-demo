@@ -9,21 +9,38 @@ li a{
     margin: 0px 10px 0 0;
     text-decoration: none;
     color: black;
-    border-bottom: 3px solid white;
-    transition: 100ms;
+     transition: 100ms;
 
 }
 li a:hover{
     color: #555;
-    border-bottom: 3px solid #555;
-    transition: 100ms;
+     transition: 100ms;
+     font-weight: 700;
+
 }
 .active{
-    font-weight: bold;
-    border-bottom: 3px solid  black !important;
-}
+    font-weight: 700;
+ }
 .active:hover{
     color: black !important;
-    border-bottom: 3px solid  black !important;
-    transition: 100ms;
+     transition: 100ms;
+}
+
+.brand{
+    font-size: 1.3rem;
+    font-weight: 700;
+     padding: 5px !important;
+    border:none !important;
+     text-align: center !important;
+
+ }
+ 
+.brand:hover{
+border:none !important;
+color: black !important;
+
+}
+ 
+ul{
+    height: 25px;
 }

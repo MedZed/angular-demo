@@ -14,10 +14,7 @@ ul{
 }
 .container{
     max-width: 720px;
-    padding: 10px;
-    margin: 0px auto;
+     margin: 0px auto;
+     min-height: 420px;
 }
-
-app-footer{
-    text-align: center !important;
-}
+ 

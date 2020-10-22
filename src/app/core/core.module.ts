@@ -5,7 +5,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { NavComponent } from './components/layout/nav/nav.component';
-
+ 
 
 
 @NgModule({

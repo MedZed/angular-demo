@@ -1,0 +1,14 @@
+a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 700;
+}
+p{
+    text-align: center;
+}
+.footer{
+    max-width: 720px;
+     margin: 0px auto;
+     padding: 50px 0; 
+ }
+ 

@@ -1,5 +1,6 @@
 <div class="container">
-
+<app-quote></app-quote>
+<div class="grid">
     <div class="quote" *ngFor="let quote of quotes.reverse()" >
         <a (click)="onItemClick($event, quote._id)" class="bookmark">
             <i class="fas fa-bookmark" title="Delete this quote"></i>
@@ -8,6 +9,7 @@
         </p>
         <p class="author"> {{quote?.author}} </p>
     </div>
+</div>
 
  
     <div  *ngIf="show_delete_dialog" class="dialog">

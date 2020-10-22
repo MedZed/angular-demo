@@ -1,13 +1,17 @@
-
-.hero-container{
-    width: 100%;
-    background-color: black;
+ 
+.details{
+    padding: 20px;
+    margin: 0;
+    border: 1px solid;
+    border-top: 0;
 }
 
-.hero-container h1{
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 60px;
+.details h2{
+}
+
+.details h3{
+margin: 0;    }
+ul{
+    padding:0 25px;
+
 }
